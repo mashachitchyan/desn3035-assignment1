@@ -152,44 +152,44 @@ p {
     padding: 12px 32px;
     background-color: #0933C9;
     border-radius: 8px;
-    min-width: fit-content;
-    max-width: 100%;
+    width: 100%;
     text-align: center;
-}
-
-.primary-button a {
-    color: #ffffff;
+    display: inline-block;
+    color: #ffffff; 
     text-decoration: none;
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+.primary-button:hover {
+    background-color:#1d4aeb;
+}
+
+.primary-button:active {
+    background-color:#061c68;
 }
 
 .secondary-button {
-    text-align: center;
     font-family: "proximanova_bold.otf";
     padding: 12px 32px;
-    color: #0933C9;
     border: 1px solid #0933C9;
     border-radius: 8px;
-    min-width: fit-content;
-    max-width: 100%;
-    gap: 1rem;
-}
-
-.secondary-button a {
+    width: 100%;
+    text-align: center;
+    display: inline-block; 
+    color:#0933C9;
     text-decoration: none;
     font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 600;
-    color: inherit;
 }
 
 .secondary-button:hover {
-    background-color: #0933C9;
+    background-color:#1d4aeb;
+    color: #ffffff;
 }
 
-.secondary-button:hover a {
-    color: #ffffff;
+.secondary-button:active {
+    background-color:#061c68;
 }
 
 .categories {
@@ -211,7 +211,8 @@ p {
 }
 
 .category-image {
-    width: 100%;
+    max-width: 55vw;
+    min-width: 50vw;
     height: 400px;
     object-fit: cover;
     border-radius: 12px;
@@ -310,7 +311,7 @@ p {
     display: flex;
     width: 100%;
     height: 100%;
-    animation: slide-animation 20s infinite ease-out;
+    animation: slide 20s infinite;
 }
 
 .slide {
@@ -324,26 +325,17 @@ p {
     object-fit: cover;
 }
 
-@keyframes slide-animation {
-    0% {
-        transform: translateX(0);
-    }
-
-    25% {
-        transform: translateX(-100%);
-    }
-
-    50% {
-        transform: translateX(-200%);
-    }
-
-    75% {
-        transform: translateX(-300%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+@keyframes slide {
+    0% { transform: translateX(0%); }         /* Slide 1 */
+    17.65% { transform: translateX(0%); }     /* Hold Slide 1 (7 seconds) */
+    22.35% { transform: translateX(-100%); }  /* Transition to Slide 2 (10 seconds) */
+    40% { transform: translateX(-100%); }     /* Hold Slide 2 (7 seconds) */
+    44.7% { transform: translateX(-200%); }   /* Transition to Slide 3 (10 seconds) */
+    62.35% { transform: translateX(-200%); }  /* Hold Slide 3 (7 seconds) */
+    67.05% { transform: translateX(-300%); }  /* Transition to Slide 4 (10 seconds) */
+    84.7% { transform: translateX(-300%); }   /* Hold Slide 4 (7 seconds) */
+    89.4% { transform: translateX(-400%); }   /* Transition back to Slide 1 (10 seconds) */
+    100% { transform: translateX(-400%); }    /* At 100%, we're showing the duplicate of Slide 1 */
 }
 
 .attractions {
