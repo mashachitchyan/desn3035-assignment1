@@ -44,6 +44,10 @@ body {
     align-items: center;
 }
 
+.header-img {
+    height: 50px;
+}
+
 .nav-item {
     font-family: "AlumniSans-VariableFont_wght.ttf";
     padding: 12px 32px;
