@@ -1,26 +1,26 @@
 @font-face {
     font-family: "AlumniSans-VariableFont_wght.ttf";
-    src: url(/fonts/AlumniSans-VariableFont_wght.ttf);
+    src: url(fonts/AlumniSans-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "proximanova_light.otf";
-    src: url(/fonts/proximanova_light.otf);
+    src: url(fonts/proximanova_light.otf);
 }
 
 @font-face {
     font-family: "proximanova_regular.ttf";
-    src: url(/fonts/proximanova_regular.ttf);
+    src: url(fonts/proximanova_regular.ttf);
 }
 
 @font-face {
     font-family: "proximanova_bold.otf";
-    src: url(/fonts/proximanova_bold.otf);
+    src: url(fonts/proximanova_bold.otf);
 }
 
 @font-face {
     font-family: "proximanova_extrabold.otf";
-    src: url(/fonts/proximanova_extrabold.otf);
+    src: url(fonts/proximanova_extrabold.otf);
 }
 
 * {
